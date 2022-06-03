@@ -1,8 +1,9 @@
 # main.py
-
-def main():
-    print("CASA -2")
+import pandas as pd
 
 if __name__ == "__main__":
-    main()
-    print("Ejecutado Correctamente")
+    archivo = pd.read_excel("./Sample - Superstore.xls")
+    print(archivo.profit_234)
+    print("="*50)
+    for row, dato in enumerate(archivo.quantity):
+        pass #print(row, dato)
